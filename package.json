@@ -1,7 +1,7 @@
 {
   "name": "web322-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "e",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

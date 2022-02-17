@@ -73,7 +73,7 @@ module.exports.getCars = function(){
         });
     });
 };
-
+//ddd
 module.exports.getStores = function(){
     return new Promise(function (resolve, reject){ 
         Store.findAll()

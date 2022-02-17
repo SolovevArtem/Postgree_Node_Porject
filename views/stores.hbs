@@ -1,0 +1,34 @@
+<div class="row">
+    <div class="col-md-12">
+        <h2>Stores
+            <a href="/stores/add" class="btn btn-success pull-right">Add New Store</a>
+        </h2> 
+        <hr />
+      
+        <div class="table-responsive">
+            <table class="table">
+            <tr>
+                <th>Store Id</th>
+                <th>Store Name</th>
+                <th>Store Phone</th>
+                <th>Store Address</th>
+            </tr>
+        
+            {{#each stores}}
+            <tr> 
+                <td><a href="/store/{{id}}">{{id}}</a></td>
+                <td><a href="/cars?make={{this.retailer}}">{{this.retailer}}</a></td>
+                <td><a href="tel:{{this.phone}}">{{this.phone}}</a></td>
+                <td>{{this.address}} {{this.city}}</td>
+                <td> <a class="btn btn-danger" href="/stores/delete/{{this.id}}">Remove</a></td>
+            </tr>
+            {{/each}}
+            </table>
+         </div>
+    </div> 
+     {{#unless stores}}
+    <div class="col-md-12 text-center"> 
+        <strong>{{message}}</strong>
+    </div>
+    {{/unless}}
+</div>

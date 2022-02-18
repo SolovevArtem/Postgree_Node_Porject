@@ -9,7 +9,7 @@ const multer = require("multer");
 const exphbs = require('express-handlebars');
 const app = express();
 
-const HTTP_PORT = process.env.PORT || 8080;
+const HTTP_PORT = process.env.PORT || 80;
 
 function onHttpStart() {
   console.log("Express http server listening on " + HTTP_PORT);

@@ -5,7 +5,10 @@ var sequelize = new Sequelize('dev4n8kjapc8va', 'pgvoedjnfycmrk', '66ff02484c183
     dialect: 'postgres', 
     port: 5432, 
     dialectOptions: {
-        ssl: true 
+        ssl: {
+            require: true,
+            rejectUnauthorized: false // <<<<<<< YOU NEED THIS
+          }
     }
 });
  
@@ -46,7 +49,7 @@ module.exports.initalize = function(){
             resolve();
         })
         .catch((err) => {
-            reject("unable to sync the database");
+            reject("unable to sync the database" + err);
             return;
         });
     });

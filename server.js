@@ -15,7 +15,7 @@ function onHttpStart() {
   console.log("Express http server listening on " + HTTP_PORT);
 }
 
-app.engine('.hbs', exphbs({ 
+app.engine('.hbs', exphbs.engine({ 
     extname: '.hbs',
     defaultLayout: "main",
     helpers: { 

@@ -77,7 +77,7 @@ app.post("/pictures/add", upload.single("pictureFile"), (req,res) =>{
     res.redirect("/pictures");
 });
 
-
+//
 /*People routes */
 app.get("/people", (req,res) => {
     if (req.query.vin){

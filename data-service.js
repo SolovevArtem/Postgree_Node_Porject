@@ -7,7 +7,7 @@ var sequelize = new Sequelize('dev4n8kjapc8va', 'pgvoedjnfycmrk', '66ff02484c183
     dialectOptions: {
         ssl: {
             require: true,
-            rejectUnauthorized: false // <<<<<<< YOU NEED THIS
+            rejectUnauthorized: false 
           }
     }
 });

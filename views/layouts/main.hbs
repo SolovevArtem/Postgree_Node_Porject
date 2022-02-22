@@ -7,10 +7,11 @@
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <!-- Latest compiled and minified Bootstrap 3.3.7 CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sora">
       <title>Home</title>
   </head>
-  <body>
-    <nav class="navbar navbar-default">
+  <body class="cont">
+    <nav class="navbar navbar-default navbar-custom">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -20,20 +21,20 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <span class="navbar-brand" href="#">WEB322 - Artem Solovev</span>
+          <span class="navbar-brand" href="#">DB Project</span>
         </div>
     
-        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Collect the nav linnks, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             {{#navLink "/"}} Home {{/navLink}}
            {{#navLink "/about"}}About {{/navLink}}
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/pictures">Pictures</a></li>
-            <li><a href="/People">People</a></li>
-            <li><a href="/Cars">Cars</a></li>
-            <li><a href="/Stores">Stores</a></li>
+            <li> {{#navLink "/pictures"}} Pictures {{/navLink}}</li>
+            <li>{{#navLink "/people"}} People {{/navLink}}</li>
+            <li>{{#navLink "/cars"}} Cars {{/navLink}}</li>
+            <li>{{#navLink "/stores"}} Stores {{/navLink}}</li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -47,5 +48,7 @@
 
     <!-- Latest compiled and minified Bootstrap 3.3.7 JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/site.css">
   </body>
 </html>

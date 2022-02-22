@@ -1,0 +1,60 @@
+/* Colour Variables */
+:root{
+    --bg-color: #264653;
+    --tb-color: #2a9d8f;
+    --txt-color: #e9c46a;
+    --ext-color: #f4a261;
+    --ext2-color: #e76f51;
+    
+}
+/* Setting the Google Font and the bg color */
+.cont {
+    background-color: var(--bg-color);
+    font-family: "Sora", sans-serif;
+}
+/*Top Nav Bar*/
+.navbar-custom {
+    background-color: var(--bg-color);
+    border: 2px solid #f4a261;
+}
+
+.navbar-header span {
+    color: var(--txt-color) !important;
+}
+
+.navbar-collapse ul a {
+    color: var(--txt-color) !important;
+}
+
+/* Text */
+.container h2, .container label, .container legend {
+    color: var(--txt-color);
+}
+
+.container p{
+    color: var(--ext-color);
+}
+
+strong {
+    color: var(--ext2-color) !important;
+}
+
+/* Add and Remove Buttons Selectors */
+.btn-danger {
+    background-color: var(--ext2-color) !important;
+    box-shadow: none;
+}
+
+.btn-success {
+    background-color: var(--tb-color) !important;
+    box-shadow: none;
+}
+
+
+/* Every Table */
+.table {
+    background-color: var(--tb-color);
+    color: var(--txt-color);
+    
+}
+
